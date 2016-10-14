@@ -29,18 +29,18 @@
 	npm install @angular/core @angular/compiler @angular/commom @angular/platform-browser @angular/platform-browser-dynamic --save
 	npm install @angular/http @angular/router @angular/forms @angular/upgrade --save
 
-6- Configurando o compilador Typescript em tsconfig.json. 
+6- Rodar o typings install. Neste caso foi necessário apenas 'typings install dt~core-js'
+
+7- Configurando o compilador Typescript em tsconfig.json. 
 	Mais informações em https://angular.io/docs/ts/latest/guide/typescript-configuration.html#!#tsconfig
 
-	==> Não vou rodar o typings install das bibliotecas por enquanto
-
-7- Criar o arquivo systemjs.config.js e adicionar a configuração informada através do Angular Quickstart.
+8- Criar o arquivo systemjs.config.js e adicionar a configuração informada através do Angular Quickstart.
 	* O caminho da pasta onde os arquivos ts -> js serão compilados pode ser alterado.
 	Por default o arquivo presente no Quickstart indica que o folder 'app' conterá os arquivos js, no entanto em tsconfig.json podemos alterar essa configuração ("outDir").
 
-8- Criar os scripts, em package.json, que irão automatizar a compilação e o start do lite-server.
+9- Criar os scripts, em package.json, que irão automatizar a compilação e o start do lite-server.
 
-9- Inicializar o SystemJS no index.html e adicionar as tags script.
+10- Inicializar o SystemJS no index.html e adicionar as tags script.
 	* Todas os Polyfills baixados na etapa 4 devem ser adicionados ao index.html, com exceção do rxjs, que é utilizado como dependência dos pacotes de angular-core.
 	Adicionar as tags <script> no body.
 
